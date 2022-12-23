@@ -87,4 +87,13 @@ footer {
   margin-top: auto;
 }
 
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228deg, 45%, 44%);
+}
+
 /* SCROLLBAR *//*# sourceMappingURL=style.css.map */
