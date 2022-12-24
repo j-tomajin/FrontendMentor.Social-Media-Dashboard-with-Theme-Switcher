@@ -1,3 +1,14 @@
 @use '../utils/breakpoints' as bp;
 @use '../utils/functions' as f;
 /* DISPLAY */
+
+/* MAIN */
+.main {
+    &__container--display {
+        @include bp.breakpointMin(large-screen) {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+    }
+}
