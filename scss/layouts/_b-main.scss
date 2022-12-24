@@ -1,3 +1,18 @@
 @use '../utils/breakpoints' as bp;
 @use '../utils/functions' as f;
 /* MAIN */
+
+.main {
+    width: 100%;
+
+    // &__container {
+    // }
+
+    &__line {
+        border-bottom: 1px solid red;
+
+        @include bp.breakpointMin(large-screen) {
+            display: none;
+        }
+    }
+}
