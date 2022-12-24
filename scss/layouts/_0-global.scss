@@ -1,3 +1,11 @@
 @use '../utils/breakpoints' as bp;
 @use '../utils/functions' as f;
 @use '../utils/fonts' as font;
+
+.margin-inline-auto {
+    margin-inline: auto;
+}
+
+.min-max-width {
+    width: min(calc(100% - 3rem), f.rem(1112));
+}
