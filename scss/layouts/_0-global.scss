@@ -2,10 +2,43 @@
 @use '../utils/functions' as f;
 @use '../utils/fonts' as font;
 
+body {
+    font-family: font.$inter;
+}
+
+/* WIDTH */
 .margin-inline-auto {
     margin-inline: auto;
 }
 
 .min-max-width {
-    width: min(calc(100% - 3rem), f.rem(1112));
+    width: min(calc(100% - 3rem), f.rem(1150));
+}
+
+/* FONT FAMILY */
+.inter {
+    font-weight: 400;
+    font-family: font.$inter;
+    color: var(--lt-sub-txt);
+}
+
+.inter-bold {
+    font-weight: 700;
+    font-family: font.$inter;
+    color: var(--lt-head-txt);
+}
+
+.inter-bold-alt {
+    font-weight: 700;
+    font-family: font.$inter;
+    color: var(--lt-sub-txt);
+}
+
+/* TXT COLOR */
+.added {
+    color: var(--clr-primary-lg);
+}
+
+.unsub {
+    color: var(--clr-primary-br);
 }
