@@ -4,11 +4,83 @@
 
 /* MAIN */
 .main {
+
+    .toggle {
+        display: flex;
+        align-items: center;
+        gap: f.rem(10);
+    }
+
     &__container--display {
         @include bp.breakpointMin(large-screen) {
             display: flex;
             align-items: center;
             justify-content: space-between;
+        }
+    }
+}
+
+/* SECTION USERS */
+.user {
+    display: grid;
+    gap: f.rem(24);
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, f.rem(255)), 1fr));
+
+    &__container--display {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__name {
+        display: flex;
+        align-items: center;
+        gap: f.rem(10);
+    }
+
+    &__followers {
+
+        &--count {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &--added {
+            display: flex;
+            align-items: center;
+            gap: f.rem(10);
+        }
+    }
+}
+
+/* SECTION OVERVIEW */
+.activity {
+
+    &__container--display {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(min(100%, f.rem(255)), 1fr));
+        gap: f.rem(24);
+    }
+
+    &__card {
+        display: flex;
+    }
+
+    &__type {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__platform {
+        display: flex;
+        flex-direction: column;
+
+        span {
+            display: flex;
+            align-items: center;
+            gap: f.rem(2);
         }
     }
 }
