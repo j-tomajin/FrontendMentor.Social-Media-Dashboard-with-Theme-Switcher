@@ -32,86 +32,269 @@
         <div class="main__line"></div>
 
         <!-- BUTTON TOGGLE DARK/LIGHT MODE -->
-        <button 
-          class="main__btn"
-          type="button"
-          id="dark-mode"
-          aria-label="toggle dark mode">
+        <div class="toggle">
+          Dark Mode
+          <button class="main__btn" type="button" id="dark-mode">
             <span></span>
-        </button>
+          </button>
+        </div>
     </article>
   </main>
 
   <!-- SECTION USERS -->
-  <section role="list" class="users"></section>
+  <section role="list" class="user min-max-width margin-inline-auto">
+    <!-- FACEBOOK -->
+    <div class="user__container user__container--display">
+      <!-- USERNAME -->
+      <div class="user__name">
+        <img src="./images/icon-facebook.svg" alt="Facebook icon" class="icon" aria-label="FACEBOOK">
+        <p class="inter-bold-alt">@nathanf</p>
+      </div>
+
+      <!-- FOLLOWERS -->
+      <div class="user__followers">
+        <div class="user__followers--count inter-bold">
+          1987
+          <span class="inter">Followers</span>
+
+          <!-- FOLLOWERS ADDED TODAY -->
+          <div class="user__followers--added">
+            <img src="./images/icon-up.svg" alt="icon indication that new followers added" class="up">
+            <div class="added">12 Today</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- TWITTER -->
+    <div class="user__container user__container--display">
+      <!-- USERNAME -->
+      <div class="user__name">
+        <img src="./images/icon-twitter.svg" alt="Twitter icon" class="icon" aria-label="TWITTER">
+        <p class="inter-bold-alt">@nathanf</p>
+      </div>
+
+      <!-- FOLLOWERS -->
+      <div class="user__followers">
+        <div class="user__followers--count inter-bold">
+          1044
+          <span class="inter">Followers</span>
+
+          <!-- FOLLOWERS ADDED TODAY -->
+          <div class="user__followers--added">
+            <img src="./images/icon-up.svg" alt="icon indication that new followers added" class="up">
+            <div class="added">99 Today</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- INSTAGRAM -->
+    <div class="user__container user__container--display">
+       <!-- USERNAME -->
+       <div class="user__name">
+        <img src="./images/icon-instagram.svg" alt="Instagram icon" class="icon" aria-label="INSTAGRAM">
+        <p class="inter-bold-alt">@realnathanf</p>
+      </div>
+
+      <!-- FOLLOWERS -->
+      <div class="user__followers">
+        <div class="user__followers--count inter-bold">
+          11k
+          <span class="inter">Followers</span>
+
+          <!-- FOLLOWERS ADDED TODAY -->
+          <div class="user__followers--added">
+            <img src="./images/icon-up.svg" alt="icon indication that new followers added" class="up">
+            <div class="added">1099 Today</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- YOUTUBE -->
+    <div class="user__container user__container--display">
+      <!-- USERNAME -->
+      <div class="user__name">
+        <img src="./images/icon-youtube.svg" alt="YouTube icon" class="icon" aria-label="YOUTUBE">
+        <p class="inter-bold-alt">Nathan F.</p>
+      </div>
+
+      <!-- FOLLOWERS -->
+      <div class="user__followers">
+        <div class="user__followers--count inter-bold">
+          8239
+          <span class="inter">Subscribers</span>
+
+          <!-- SUBSCRIBERS ADDED TODAY -->
+          <div class="user__followers--added">
+            <img src="./images/icon-down.svg" alt="icon indication that new followers unsubscribed" class="up">
+            <div class="unsub">144 Today</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <!-- SECTION RECENT ACTIVITIES -->
-  <section role="list" class="activities"></section>
-  
+  <section role="list" class="activity min-max-width margin-inline-auto">
+    <h2 class="activity__head inter-bold">Overview - Today</h2>
 
-  Dark Mode
+    <div class="activity__container activity__container--display">
+      
+      <!-- PAGE VIEWS(FACEBOOK) -->
+      <div class="activity__card">
+        <!-- TYPE -->
+        <div class="activity__type inter-bold-alt">
+          Page Views
+          <span class="inter-bold">87</span>
+        </div>
 
-  
+        <!-- PLATFORM -->
+        <div class="activity__platform">
+          <img src="./images/icon-facebook.svg" alt="Facebook icon" aria-label="FACEBOOK">
+          <span class="added inter-bold">
+            <img src="./images/icon-up.svg" alt="">
+            3%
+          </span>
+        </div>
+      </div>
 
-  @nathanf
-  1987
-  Followers
-  12 Today
+      <!-- LIKES(FACEBOOK) -->
+      <div class="activity__card">
+        <!-- TYPE -->
+        <div class="activity__type inter-bold-alt">
+          Likes
+          <span class="inter-bold">52</span>
+        </div>
 
-  @nathanf
-  1044
-  Followers
-  99 Today
+        <!-- PLATFORM -->
+        <div class="activity__platform">
+          <img src="./images/icon-facebook.svg" alt="Facebook icon" aria-label="FACEBOOK">
+          <span class="unsub inter-bold">
+            <img src="./images/icon-down.svg" alt="">
+            2%
+          </span>
+        </div>
+      </div>
 
-  @realnathanf
-  11k
-  Followers
-  1099 Today
+      <!-- LIKES(INSTAGRAM) -->
+      <div class="activity__card">
+        <!-- TYPE -->
+        <div class="activity__type inter-bold-alt">
+          Likes
+          <span class="inter-bold">5462</span>
+        </div>
 
-  Nathan F.
-  8239
-  Subscribers
-  144 Today
+        <!-- PLATFORM -->
+        <div class="activity__platform">
+          <img src="./images/icon-instagram.svg" alt="Instagram icon" aria-label="INSTAGRAM">
+          <span class="added inter-bold">
+            <img src="./images/icon-up.svg" alt="">
+            2257%
+          </span>
+        </div>
+      </div>
 
+      <!-- PROFILE VIEWS(INSTAGRAM) -->
+      <div class="activity__card">
+        <!-- TYPE -->
+        <div class="activity__type inter-bold-alt">
+          Profile Views
+          <span class="inter-bold">52k</span>
+        </div>
 
+        <!-- PLATFORM -->
+        <div class="activity__platform">
+          <img src="./images/icon-instagram.svg" alt="Instagram icon" aria-label="INSTAGRAM">
+          <span class="added inter-bold">
+            <img src="./images/icon-up.svg" alt="">
+            1375%
+          </span>
+        </div>
+      </div>
 
-  Overview - Today
+      <!-- RETWEETS(TWITTER) -->
+      <div class="activity__card">
+        <!-- TYPE -->
+        <div class="activity__type inter-bold-alt">
+          Retweets
+          <span class="inter-bold">117</span>
+        </div>
 
-  Page Views
-  87
-  3%
+        <!-- PLATFORM -->
+        <div class="activity__platform">
+          <img src="./images/icon-twitter.svg" alt="Twitter icon" aria-label="TWITTER">
+          <span class="added inter-bold">
+            <img src="./images/icon-up.svg" alt="">
+            303%
+          </span>
+        </div>
+      </div>
 
-  Likes
-  52
-  2%
+      <!-- LIKES(TWITTER) -->
+      <div class="activity__card">
+        <!-- TYPE -->
+        <div class="activity__type inter-bold-alt">
+          Likes
+          <span class="inter-bold">507</span>
+        </div>
 
-  Likes
-  5462
-  2257%
+        <!-- PLATFORM -->
+        <div class="activity__platform">
+          <img src="./images/icon-twitter.svg" alt="Twitter icon" aria-label="TWITTER">
+          <span class="added inter-bold">
+            <img src="./images/icon-up.svg" alt="">
+            553%
+          </span>
+        </div>
+      </div>
 
-  Profile Views
-  52k
-  1375%
+      <!-- LIKES(YOUTUBE) -->
+      <div class="activity__card">
+        <!-- TYPE -->
+        <div class="activity__type inter-bold-alt">
+          Likes
+          <span class="inter-bold">107</span>
+        </div>
 
-  Retweets
-  117
-  303%
+        <!-- PLATFORM -->
+        <div class="activity__platform">
+          <img src="./images/icon-youtube.svg" alt="YouTube icon" aria-label="YOUTUBE">
+          <span class="unsub inter-bold">
+            <img src="./images/icon-down.svg" alt="">
+            19%
+          </span>
+        </div>
+      </div>
 
-  Likes
-  507
-  553%
+      <!-- TOTAL VIEWS(YOUTUBE) -->
+      <div class="activity__card">
+        <!-- TYPE -->
+        <div class="activity__type inter-bold-alt">
+          Total Views
+          <span class="inter-bold">1407</span>
+        </div>
 
-  Likes
-  107
-  19%
+        <!-- PLATFORM -->
+        <div class="activity__platform">
+          <img src="./images/icon-youtube.svg" alt="YouTube icon" aria-label="YOUTUBE">
+          <span class="unsub inter-bold">
+            <img src="./images/icon-down.svg" alt="">
+            12%
+          </span>
+        </div>
+      </div>
 
-  Total Views
-  1407
-  12%
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Your Name Here</a>.
+    </div>
+  </footer>
 </body>
 </html>
