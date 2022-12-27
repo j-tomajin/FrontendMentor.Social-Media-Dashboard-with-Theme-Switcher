@@ -1,0 +1,40 @@
+@use '../utils/breakpoints' as bp;
+@use '../utils/functions' as f;
+
+/* OVERVIEW */
+.activity {
+
+    &__head {
+        margin-block: f.rem(32);
+    }
+
+    &__card {
+        padding: f.rem(24);
+        background-color: var(--lt-card-bg);
+        height: 130px;
+        border-radius: f.rem(8);
+    }
+
+    &__type {
+        font-size: f.rem(18);
+
+        span {
+            margin-top: auto;
+            font-size: f.rem(36);
+            line-height: 1;
+        }
+    }
+
+    &__platform {
+        margin-left: auto;
+
+        & > img {
+            width: 20px;
+            margin-left: auto;
+        }
+
+        span {
+            margin-top: auto;
+        }
+    }
+}
