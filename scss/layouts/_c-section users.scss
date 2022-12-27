@@ -1,3 +1,35 @@
 @use '../utils/breakpoints' as bp;
 @use '../utils/functions' as f;
 /* SECTION */
+
+/* USERS ACTIVITIES */
+.user {
+    margin-inline: auto;
+
+    &__container {
+        padding: f.rem(32);
+        background-color: var(--lt-user-card-bg);
+        border-radius: f.rem(8);
+        overflow: hidden;
+    }
+
+    &__followers {
+        margin-top: f.rem(32);
+
+        &--count {
+            font-size: f.rem(48);
+            line-height: 1.3;
+
+            span {
+                font-size: f.rem(16);
+                text-transform: uppercase;
+                letter-spacing: 3px;
+            }
+        }
+
+        &--added {
+            font-size: f.rem(14);
+            margin-top: f.rem(32);
+        }
+    }
+}
