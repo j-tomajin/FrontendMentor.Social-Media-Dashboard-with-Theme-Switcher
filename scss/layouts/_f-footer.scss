@@ -4,13 +4,15 @@
 
 footer {
     margin-top: auto;
+    padding-top: f.rem(64);
 }
 
 .attribution { 
-    font-size: 11px; 
+    font-size: 0.75rem;
+    font-size: clamp(0.75rem, 0.56rem + 0.73vw, 1rem);
     text-align: center; 
 }
     
 .attribution a { 
-    color: hsl(228, 45%, 44%); 
+    color: var(--lt-head-txt); 
 }
