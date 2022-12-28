@@ -11,6 +11,11 @@
         background-color: var(--lt-user-card-bg);
         border-radius: f.rem(8);
         overflow: hidden;
+        box-shadow: var(--box-shadow);
+
+        &:hover {
+            background-color: var(--bg-card-hover);
+        }
     }
 
     &__followers {
