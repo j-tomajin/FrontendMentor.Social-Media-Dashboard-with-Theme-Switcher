@@ -13,6 +13,11 @@
         background-color: var(--lt-card-bg);
         height: 130px;
         border-radius: f.rem(8);
+        box-shadow: var(--box-shadow);
+
+        &:hover {
+            background-color: var(--bg-card-hover);
+        }
     }
 
     &__type {
