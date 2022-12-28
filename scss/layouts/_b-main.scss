@@ -19,29 +19,37 @@
     }
 
     &__btn {
-        width: 50px;
+        width: 60px;
         height: 30px;
-        background-color: black;
+        background: var(--btn-bg);
         border-radius: 50px;
         position: relative;
 
-        span {
-            width: 25px;
-            height: 25px;
+        .slider {
+            width: 22px;
+            height: 22px;
             position: absolute;
-            background-color: red;
+            background-color: var(--btn-slider);
             border-radius: 50%;
-            left: 3px;
-            top: 2.5px;
+            left: 5px;
+            top: 4px;
+            transition: .3s ease-in;
+        }
+
+        .slider-toggle {
+            transform: translateX(130%);
         }
     }
 }
 
-:root:has(#theme:checked) {
+.darkmode {
     /* DARK THEME */
     --lt-bg: hsl(230, 17%, 14%);
     --lt-user-card-bg: hsl(232, 19%, 15%);
     --lt-card-bg: hsl(228, 28%, 20%);
     --lt-sub-txt: hsl(228, 34%, 66%);
     --lt-head-txt: hsl(0, 0%, 100%);
+
+    --btn-bg: linear-gradient(to right, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
+    --btn-slider: hsl(228, 28%, 20%);
 }
