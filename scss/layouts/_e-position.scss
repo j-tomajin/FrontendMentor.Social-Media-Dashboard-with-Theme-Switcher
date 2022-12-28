@@ -47,3 +47,31 @@
         }
     }
 }
+
+/* FOOTER POSITON */
+.footer {
+
+    &__attribution {
+
+        a {
+            position: relative;
+
+            &::after {
+                content: '';
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                margin-inline: auto;
+                width: 0;
+                height: 2px;
+                background-color: var(--lt-head-txt);
+                transition: width .3s ease-in-out;
+            }
+
+            &:hover::after {
+                width: 100%;
+            }
+        }
+    }
+}
